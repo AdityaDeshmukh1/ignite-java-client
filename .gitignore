@@ -1,0 +1,20 @@
+# Ignore Ignite persistence and WAL data folders
+ignite/work/db/
+ignite/work/db/**
+
+# (Explicit to be safe, ignore all parts, checkpoints, logs under work/db)
+ignite/work/db/node*/cache-*/
+ignite/work/db/node*/wal/
+ignite/work/db/node*/cp/
+
+# Maven target directory (build outputs)
+target/
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# OS generated files
+.DS_Store
+Thumbs.db
