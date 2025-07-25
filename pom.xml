@@ -39,6 +39,12 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.36</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.ignite</groupId>
+            <artifactId>ignite-jdbc</artifactId>
+            <version>3.0.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -60,7 +66,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <mainClass>com.example.HelloWorld</mainClass>
+                    <mainClass>com.example.IgniteJDBCExample</mainClass>
                 </configuration>
             </plugin>
         </plugins>
